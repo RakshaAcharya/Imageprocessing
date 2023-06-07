@@ -1,0 +1,10 @@
+#texting in image
+import numpy as np
+import cv2
+image=cv2.imread(r"C:/Users/User/Downloads/dog.jfif",cv2.IMREAD_UNCHANGED)
+position=(10,30)
+cv2.putText(image,"MISTY",position,cv2.FONT_HERSHEY_COMPLEX,1,(0,0,0),2)
+cv2.imwrite('output.png',image)
+cv2.imshow('C:/Users/User/Downloads/t-shirt.jfif',image)
+cv2.waitKey()
+cv2.destroyAllWindows()
